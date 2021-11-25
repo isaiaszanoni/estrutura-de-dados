@@ -59,4 +59,13 @@ public class Vetor {
         return alunos[posicao];
     }
 
+    public void remove(int posicao) {
+        for(int a = posicao; a < this.totalDeAlunos; a++){
+            this.alunos[a] = this.alunos[a+1];
+
+        }
+
+        totalDeAlunos --;
+    }
+
 }

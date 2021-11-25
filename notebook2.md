@@ -55,5 +55,16 @@ public boolean contem(Aluno aluno) {
 - E se eu colocar um numero fora do intervalo do meu array? Obvio, vamos ter um erro de ‘`index out of bounds`’. Vamos tratar de maneira mais amigável este erro.
   O metodo `posicaoOcupada` 
 
-- 
+### 04
 
+Metodo `adicionaAoIndex`, que adiciona em qualquer index e não somente no último
+
+- Se temos um array com 10 posições ocupadas e queremos colocar um dado no index 4, os outros dados precisam se mover 1 index acima, correto? Precisam ser empurrados para a direita (o que era 5 vira 6, o que era 6 vira 7 etc...)
+
+  Vamos criar um loop `for` do fim para o começo 
+
+  - Iniciando pela última posição ocupada (marcada pelo `totalDeAlunos`) e indo até a posição onde eu gostaria de adicionar o aluno.
+
+### 05
+
+Função `remove`, que claro, remove um elemento do array. Um loop for percorre o array a partir do index onde o elemento será removido e empurra todos os outros para a direita.

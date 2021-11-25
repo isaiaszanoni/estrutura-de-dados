@@ -25,7 +25,8 @@ public class VetorTeste {
         Aluno algumAluno = lista.pega(2);
         System.out.println(algumAluno);
 
-        lista.adiciona(8, a8);
+        //lista.adiciona(8, a8);
+        lista.remove(1);
         System.out.println(lista);
     }
 
