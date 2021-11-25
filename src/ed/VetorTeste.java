@@ -19,12 +19,14 @@ public class VetorTeste {
         lista.adiciona(a3);
         lista.adiciona(a4);
 
-        // System.out.println(lista);
+        System.out.println(lista);
         System.out.println("Joaquim está na lista? " + lista.contem(a3));
-
 
         Aluno algumAluno = lista.pega(2);
         System.out.println(algumAluno);
+
+        lista.adiciona(8, a8);
+        System.out.println(lista);
     }
 
 }
