@@ -9,8 +9,8 @@ public class Vetor {
 
     public void adiciona(Aluno aluno) {
         this.alunos[totalDeAlunos] = aluno;
+        System.out.println(aluno + " adicionado na posição: " + totalDeAlunos);
         totalDeAlunos++;
-
     }
 
     public String toString() {
@@ -19,6 +19,28 @@ public class Vetor {
 
     public int tamanho() {
         return totalDeAlunos;
+    }
+
+    public boolean contem(Aluno aluno) {
+        for(int a = 0; a < totalDeAlunos; a++){
+            if(aluno.equals(alunos[a])){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean posicaoOcupada(int posicao) {
+        return posicao >=0 && posicao < totalDeAlunos;
+    }
+
+    public Aluno pega(int posicao) {
+
+        if(!posicaoOcupada(posicao)){
+            throw new IllegalArgumentException("Posição inválida");
+        }
+
+        return alunos[posicao];
     }
 
 }

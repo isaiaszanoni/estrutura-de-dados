@@ -15,16 +15,16 @@ public class VetorTeste {
         Vetor lista = new Vetor();
 
         lista.adiciona(a1);
-        System.out.println( a1 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a2);
-        System.out.println( a2 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a3);
-        System.out.println( a3 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a4);
-        System.out.println( a4 + " adicionado na posição: " + lista.tamanho());
 
-        System.out.println(lista);
+        // System.out.println(lista);
+        System.out.println("Joaquim está na lista? " + lista.contem(a3));
 
+
+        Aluno algumAluno = lista.pega(2);
+        System.out.println(algumAluno);
     }
 
 }
