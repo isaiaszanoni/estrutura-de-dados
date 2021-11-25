@@ -5,18 +5,20 @@ import java.util.Arrays;
 public class Vetor {
 
     private Aluno[] alunos = new Aluno[100];
+    private int totalDeAlunos = 0; //guarda a posição vazia do array
 
     public void adiciona(Aluno aluno) {
-        for(int a = 0; a < alunos.length; a++) {
-            if(alunos[a] == null) {
-                alunos[a] = aluno;
-                break;
-            }
-        }
+        this.alunos[totalDeAlunos] = aluno;
+        totalDeAlunos++;
+
     }
 
     public String toString() {
         return Arrays.toString(alunos);
+    }
+
+    public int tamanho() {
+        return totalDeAlunos;
     }
 
 }

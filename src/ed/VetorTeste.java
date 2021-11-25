@@ -15,15 +15,16 @@ public class VetorTeste {
         Vetor lista = new Vetor();
 
         lista.adiciona(a1);
+        System.out.println( a1 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a2);
+        System.out.println( a2 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a3);
+        System.out.println( a3 + " adicionado na posição: " + lista.tamanho());
         lista.adiciona(a4);
-        lista.adiciona(a5);
-        lista.adiciona(a6);
-        lista.adiciona(a7);
-        lista.adiciona(a8);
+        System.out.println( a4 + " adicionado na posição: " + lista.tamanho());
 
         System.out.println(lista);
+
     }
 
 }
